@@ -44,7 +44,7 @@
         Class.forName("com.mysql.cj.jdbc.Driver");
         String jdbcUrl = "jdbc:mysql://35.177.120.128:3306/mydb";
         String jdbcUser = "admin";
-        String jdbcPassword = "1234";
+        String jdbcPassword = "swvmfhwprxm2023";
         connection = DriverManager.getConnection(jdbcUrl, jdbcUser, jdbcPassword);
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd");

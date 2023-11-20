@@ -21,7 +21,7 @@
     String driverName = "com.mysql.jdbc.Driver";
     String url = "jdbc:mysql://35.177.120.128:3306/mydb";
     String username = "admin";
-    String password = "1234";
+    String password = "swvmfhwprxm2023";
     Connection conn = null;
 
     Class.forName(driverName);

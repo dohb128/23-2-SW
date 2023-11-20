@@ -30,7 +30,7 @@
 
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
-					conn = DriverManager.getConnection("jdbc:mysql://35.177.120.128/mydb", "admin", "1234");
+					conn = DriverManager.getConnection("jdbc:mysql://35.177.120.128/mydb", "admin", "swvmfhwprxm2023");
 					stmt = conn.createStatement();
 					String query = "SELECT date, time, team1, team2 FROM kbo_matches ORDER BY date ASC, time ASC";
 					rs = stmt.executeQuery(query);

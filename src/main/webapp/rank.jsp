@@ -39,7 +39,7 @@ th {
 
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		connection = DriverManager.getConnection("jdbc:mysql://35.177.120.128:3306/mydb", "admin", "1234");
+		connection = DriverManager.getConnection("jdbc:mysql://35.177.120.128:3306/mydb", "admin", "swvmfhwprxm2023");
 		statement = connection.createStatement();
 
 		String query = "SELECT NAME, point FROM members ORDER BY point DESC";

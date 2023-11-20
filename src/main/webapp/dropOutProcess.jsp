@@ -22,7 +22,7 @@
 		boolean pwCheck = false;
 		Class.forName("com.mysql.jdbc.Driver");
 		
-		con = DriverManager.getConnection("jdbc:mysql://35.177.120.128:3306/mydb","admin","1234");
+		con = DriverManager.getConnection("jdbc:mysql://35.177.120.128:3306/mydb","admin","swvmfhwprxm2023");
 		
 		String sql = "SELECT * FROM members WHERE id = ?";
 		try {

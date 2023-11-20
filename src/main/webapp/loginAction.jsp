@@ -14,8 +14,8 @@
 	String dbType = "com.mysql.jdbc.Driver";
     String url = "jdbc:mysql://35.177.120.128:3306/mydb";
     String username = "admin";
-    String password = "1234";
-    
+    String password = "swvmfhwprxm2023";
+
     //자바와db연동을 위한 connection 객체 생성
     Connection conn = null;
     //db명령에 대한 반환값

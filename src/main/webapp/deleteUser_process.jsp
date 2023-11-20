@@ -19,7 +19,7 @@ ResultSet rs = null;
 try {
     String jdbcUrl = "jdbc:mysql://35.177.120.128:3306/mydb";
     String jdbcUser = "admin";
-    String jdbcPassword = "1234";
+    String jdbcPassword = "swvmfhwprxm2023";
 
     Class.forName("com.mysql.cj.jdbc.Driver");
     conn = DriverManager.getConnection(jdbcUrl, jdbcUser, jdbcPassword);

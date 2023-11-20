@@ -47,7 +47,7 @@ th {
 	// 데이터베이스 연결 설정
 	String jdbcUrl = "jdbc:mysql://35.177.120.128:3306/mydb?useUnicode=true&characterEncoding=UTF-8";
 	String jdbcUser = "admin";
-	String jdbcPassword = "1234";
+	String jdbcPassword = "swvmfhwprxm2023";
 
 	try (Connection conn = DriverManager.getConnection(jdbcUrl, jdbcUser, jdbcPassword);
 			PreparedStatement pstmt = conn.prepareStatement("SELECT m.date, m.time, m.team1, m.team2, "
