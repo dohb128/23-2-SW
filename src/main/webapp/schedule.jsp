@@ -8,6 +8,7 @@
 <title>KBO 게시판</title>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body style="text-align: center;">
 	<!-- 오른쪽 영역 (경기 일정) -->

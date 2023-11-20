@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KBO 팀 랜킹</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="tables.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+
     <style>
         <!-- Add your styles here -->
     </style>

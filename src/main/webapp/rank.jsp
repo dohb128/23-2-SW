@@ -12,6 +12,8 @@
 <title>KBO 게시판</title>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tables.css">
 <style>
 table {
 	width: 100%;

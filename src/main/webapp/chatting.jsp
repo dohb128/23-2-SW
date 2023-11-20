@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="style.css">
 <title>실시간 익명 채팅 사이트</title>
 <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -73,26 +72,34 @@
 	}
 	
 	function addChat(chatName, chatContent, chatTime) {
-		$('#chatList')
-				.append(
-						'<div class="row">'
-								+ '<div class = "col-lg-12">'
-								+ '<div class = "media">'
-								+ '<a class="pull-left" href="#">'
-								+ '<img class="media-object img-circle" src="images/go.png" alt="">'
-								+ '</a>' + '<div class="media-body">'
-								+ '<h4 class="media-heading">' + chatName
-								+ '<span class="small pull-right">' + chatTime
-								+ '</span>' + '</h4>' + '<p>' + chatContent
-								+ '</p>' + '</div>' + '</div>' + '</div>'
-								+ '</div>' + '<hr>');
-		$('#chatList').scrollTop($('#chatList')[0].scrollHeight);
-	}
+
+        $('#chatList').append(
+            '<div class="row">' +
+            '<div class="col-lg-12">' +
+            '<div class="media">' +
+            '<a class="pull-left" href="#">' +
+            '<img class="media-object img-circle" src="image/icon.png" alt="" width="60" height="60">' +
+            '</a>' +
+            '<div class="media-body">' +
+            '<h4 class="media-heading">' + chatName +
+            '<span class="small pull-right">' + formattedTime + '</span>' +
+            '</h4>' +
+            '<p>' + chatContent + '</p>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '<hr>'
+        );
+
+        $('#chatList').scrollTop($('#chatList')[0].scrollHeight);
+    }
+
 
 	function getInfiniteChat() {
 		setInterval(function() {
 			chatListFunction(lastID);
-		}, 10000);  // db에 업로드 되는 속도가 새로고침이 속도와 맞지 않아 여러번 뜨는 오류 발생
+		}, 3000);  // db에 업로드 되는 속도가 새로고침이 속도와 맞지 않아 여러번 뜨는 오류 발생
 	}
 
 </script>

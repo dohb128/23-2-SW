@@ -10,6 +10,8 @@
 <title>투표 결과</title>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tables.css">
 <style>
 body { .table-container { margin-left:10px; /* 테이블 양 옆에 여백 설정*/
 	margin-right: 10px;

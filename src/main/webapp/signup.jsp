@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 <title>회원가입</title>
 <script type="text/javascript">
 		function checkFun() {

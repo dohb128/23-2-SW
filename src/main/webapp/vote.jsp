@@ -9,6 +9,7 @@
 <title>KBO 승리 예측 투표</title>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <style>
 body {

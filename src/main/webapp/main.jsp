@@ -11,7 +11,10 @@
 <meta name="viewport" content="width=divice-width" , initial-scale="1">
 <title>KBO 게시판</title>
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="tables.css">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
+
 <script type="text/javascript">
 <!-- 선수 생일 팝업을 위한 스크립트 -->
 
@@ -212,6 +215,11 @@ function openBirthdayPopup() {
 			</div>
 		</div>
 	</div>
+
+	<!-- chat.png 이미지 추가 -->
+    <div class="thumbnail chat-image">
+        <a href="chatting.jsp"><img src="image/chat.png" alt="Chatting"></a>
+    </div>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>

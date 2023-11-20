@@ -13,6 +13,7 @@
 <title>관리자용</title>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <style>
 body {

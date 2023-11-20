@@ -16,7 +16,7 @@ public class ChatDAO {
 
 		    
 		    // 연결
-		    conn = DriverManager.getConnection(url, "admin", "1234");
+		    conn = DriverManager.getConnection(url, "admin", "swvmfhwprxm2023");
 		} catch (Exception ex) {
 		    ex.printStackTrace();
 		}
