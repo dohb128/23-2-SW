@@ -1,0 +1,573 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+	font-family: abster;
+	src:url(font/KBO-Dia-Gothic_bold.woff) format('woff');
+}
+@font-face {
+	font-family: abster-lite;
+	src:url(font/KBO-Dia-Gothic_medium.woff) format('woff');
+}
+
+@font-face {
+	font-family: abster-light;
+	src:url(font/KBO-Dia-Gothic_light.woff) format('woff');
+}
+*{
+	margin : 0;
+	padding : 0;
+	box-sizing: border-box;
+	cursor: url(image/cursormain.png) 15 15, progress;
+}
+
+li:hover,a:hover,img:hover,button:hover,area:hover {
+	cursor: url(image/howercursor.png) 15 15, pointer;
+}
+
+
+body {
+	background-color: white;
+}
+.container-mine{
+	width: 100%;
+}
+
+.container-mine .painted{
+	width : 100%;
+/* 	border-bottom: 1px solid black;
+ */	background-color: #BDBDBD;
+}
+.container-mine .header{
+	width: 79%;
+	height : 50px;	
+	margin:0 auto; /* 항상 수평으로 오게 */
+	display : flex;
+	justify-content: flex-end; 	/* 항상 좌우 끝으로 붙어서 출력이 되게 */
+	align-items: center;
+	
+}
+
+.container-mine .header-main h1 a{
+	font-size : 32px;
+	text-decoration: none;
+	color: black;	
+	font-family: abster;
+}
+
+.container-mine .nav ul li{
+	display: inline-block; /* 가로로 정렬되게 */
+	margin: 0 10px; /* li 사이의 간격을 준다. */
+}
+
+.container-mine .nav ul li a{
+	text-decoration: none; /*텍스트 데코레이션 초기화  */
+	font-family: abster-light;
+	font-size: 16px;
+	color: black ;
+}
+
+.container-mine .border {
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+.container-mine .header-main {
+	width : 80%;
+	height: 100px;
+	margin: 0 auto;
+	display : flex;
+	align-items: center;
+	justify-content:space-between;
+	
+
+}
+	
+
+.container-mine .header-main .nav-bbs ul li{
+	display: inline-block;
+	margin: 0 20px;
+}
+.container-mine .header-main .nav-bbs ul li a{
+	text-decoration: none; /*텍스트 데코레이션 초기화  */
+	font-size : 16px;
+	font-family: abster-lite;
+	color: black ;
+}
+
+
+.team-plan-container {
+	width: 80%;
+	
+	margin: 0 auto;
+}
+
+
+.section input[id*="slide"] {
+	display: none;
+}
+
+.section .slidewrap{
+	margin-top : 30px ;
+	width : 100%;
+ 	height : 900px; 
+	margin: 0 auto;
+	overflow:hidden;
+	display : flex;
+	align-items: center;
+	justify-content:space-between;
+}
+
+.section .slidelist {
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.section .slidelist > li {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	transition: all .5s;
+}
+
+.section .slidelist > li > a {
+	display: block;
+	position: relative;
+}
+
+.section .slidelist > li > a img {
+	width: 100%;
+}
+
+.section .slidelist label {
+	position: absolute;
+	z-index: 10;
+	top : 50%;
+	transform:translateY(-50%);
+	padding: 50px;
+	cursor: pointer;
+}
+
+.section .slidelist .left {
+	left: 30px;
+	background: url("image/left.png") center center / 100% no-repeat;
+}
+
+.section .slidelist .right {
+	right: 30px;
+	background: url("image/right.png") center center / 100% no-repeat;
+}
+
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li  {
+	transform:translateX(0%);
+}
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li  {
+	transform:translateX(-100%);
+}
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li  {
+	transform:translateX(-200%);
+}
+
+.section [id="slide04"]:checked ~ .slidewrap .slidelist > li  {
+	transform:translateX(-300%);
+}
+
+
+.container-ranking {
+	
+	width: 100%;
+	margin-top: 100px;
+}
+
+.container-ranking h1{
+	color: black;	
+	font-family: abster;
+	text-align: center;
+}
+
+.container-ranking .ranking-main {
+	width:60%;
+	margin:0 auto; /* 항상 수평으로 오게 */
+}
+
+
+.rank table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #fff;
+    border-spacing: 1px;
+    font-family: 'Cairo', sans-serif;
+  	margin: auto;
+}
+
+
+
+.rank table td {
+    padding: 10px;
+    background-color: #eee;
+}
+
+.rank table th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.rank img {
+    width: 90px;
+    height: 90px;
+}
+
+.loginform {
+	background-color : rgba(255,255,255,0.5);
+	border-radius : 20px;
+	border : 1px solid black;
+	box-sizing: border-box;
+	flex-direction: column;
+	display: flex;
+	margin: 0 auto;
+	min-height: 600px;
+	padding: 20px 0 30px;
+	width : 700px;
+	color: black;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loginform .loginform-main{
+	margin-left: 80px;
+	margin-bottom: 110px;
+	margin-right: 80px;
+}
+
+.loginform .loginform-input input {
+	width:100% ;
+	height: 60px;
+	font-size : 20px;
+	padding: 6px 12px;
+	border-radius: 20px;
+	margin-bottom: 60px;
+}
+
+
+.loginform .loginform-input{
+	margin-top : 100px ;
+}
+
+.loginform .loginform-main .loginform-input button {
+	width: 100% ;
+	border: 1px solid black;
+	font-family: abster;
+	font-size : 20px;	
+	color: black;
+	padding: 15px 20px ;
+	border-radius: 20px;
+	outline : none; /* 클릭했을 때 잔상을 없앰 */
+	cursor : pointer; /* 커서가 보일 수 있도록 */
+	transition: all .4s;
+}
+.loginform .loginform-main .loginform-input button:hover {
+	background-color: #f3f4f8;
+}
+
+.container-signform {
+	margin-top: 50px;
+	width:100%;
+	display:flex;
+	justify-content:center;
+} 
+
+.signform {
+	background-color : rgba(255,255,255,0.5);
+	border-radius : 20px;
+	border : 1px solid black;
+	box-sizing: border-box;
+	position: absolute;
+	flex-direction: column;
+	display: flex;
+	margin: 0 ;
+	min-height: 600px;
+	padding: 20px 0 30px;
+	width : 700px;
+	color: black;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.signform .signform-main{
+	margin-left: 80px;
+	margin-bottom: 110px;
+	margin-right: 80px;
+}
+
+.signform .signform-input input {
+	width:100% ;
+	height: 60px;
+	font-size : 20px;
+	padding: 6px 12px;
+	border-radius: 20px;
+	margin-bottom: 60px;
+}
+
+.signform .signform-input .input_chk {
+	position: relative;
+}
+.signform .signform-input .input_chk .chk{
+	
+	position: absolute;
+	right: 0;
+	width: 22px;
+	height: 22px;
+}
+
+.signform .signform-input .input_chk label{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: block;
+	height: 30px;
+	margin-bottom: 60px;
+}
+
+.signform .signform-input{
+	margin-top : 100px ;
+}
+
+.signform .signform-input p{
+	margin-bottom: 60px;
+	font-size: 20px;
+	font-family: abster;
+}
+
+.signform .signform-main .signform-input button {
+	width: 100% ;
+	border: 1px solid black;
+	font-family: abster;
+	font-size : 20px;	
+	color: black;
+	padding: 15px 20px ;
+	border-radius: 20px;
+	outline : none; /* 클릭했을 때 잔상을 없앰 */
+	cursor : pointer; /* 커서가 보일 수 있도록 */
+	transition: all .4s;
+}
+.signform .signform-main .signform-input button:hover {
+	background-color: #f3f4f8;
+}
+
+.container-bbs {
+	
+	width: 100% ;
+}
+
+.btn-custom {
+	font-family: abster-light;
+	margin-top: 5px;
+	border: 1px solid black;
+	border-color: black;
+	padding: 6px 12px;
+	border-radius: 8px;
+	background-color: black;
+	color:white;
+	outline : none; /* 클릭했을 때 잔상을 없앰 */
+	cursor : pointer; /* 커서가 보일 수 있도록 */
+	transition: all .4s;
+	text-decoration: none;
+}
+.btn-custom:hover {
+	background-color: #ddd;
+	color:black;
+}
+
+.btn-right {
+	float: right;
+}
+
+.btn-left{
+	float: left;
+}
+
+.bbs-express {
+	width: 1150px;
+	height: 100px;
+	display: flex;
+	margin: 0 auto;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  margin-top: 25px;
+}
+
+.bbs-express h1 {
+	
+	font-family: abster;
+}
+
+.button-flex {
+	display: flex;
+	width: 100%;
+  	align-items: center;
+	justify-content: center;
+}
+
+.nothing {
+	
+	width: 10%;
+	height: 100%;
+}
+
+.nothing-5 {
+	
+	width: 5%;
+	height: 100%;
+}
+
+.a {
+	width: 10%;
+	height: 100%;
+}
+.a-5 {
+	width: 5%;
+	height: 100%;
+}
+
+.p {
+	width: 80%;
+	height: 100%;	
+	align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.p-85 {
+	width: 85%;
+	height: 100%;	
+	align-items: center;
+    display: flex;
+    justify-content: center;
+    color:#BDBDBD;
+}
+.button-flex p {
+	font-family: abster-light;
+    
+  }
+
+
+.bbs-border {
+	width: 100%;
+}
+
+.next-bbs {
+	width:100%;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.write-border{
+	width: 100%;
+	height: 500px;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+.write-main{
+	width: 1150px;
+	height: 80%;
+	font-family: abster-lite;
+}
+
+.write-main input[type=text]{
+	font-family: abster-lite;
+	width: 100%;
+	height: 60px;
+	border-radius: 20px;
+	padding : 10px;
+	font-size: 16px;
+	margin-bottom : 30px;
+}
+
+.write-main textarea {
+	font-family: abster-lite;
+	width: 100%;
+	height: 500px;
+	border-radius: 20px;
+	padding : 10px;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.write-btn {
+	width: 100%;
+	height: 30px;
+}
+.write-btn input{
+	float: right;
+	width: 8%;
+	height: 100%;
+}
+
+
+.button-back{
+	float: right;
+	width: 8%;
+	height: 100%;
+	margin-right: 3px;
+}
+
+.chat-image {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+}
+
+
+.view-logo {
+	width: 1100px;
+	height: 60px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 45px;
+	font-family: abster-lite;
+}
+
+.view-logo p {
+	
+    margin-right: 3%;
+}
+
+.view-logo a {
+    text-decoration: none;
+    color: red;
+    transition: all .4s;
+}
+
+.view-logo a:hover {
+    color: blue;
+}
+
+.view-content {
+	font-family: abster-light;
+	font-size: 16px;
+	margin: 0 auto;
+	width: 1040px;
+	padding: 10px;
+	margin-bottom: 45px;
+    letter-spacing: 0.3ex;
+    line-height: 1.7;
+}
+
+.view-button {
+	width: 1100px;
+	margin: 0 auto ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
